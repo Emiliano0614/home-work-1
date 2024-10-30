@@ -1,0 +1,25 @@
+.blue-text {
+    color: blue;
+}
+
+
+.blurred-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 128, 255, 0.5); 
+  filter: blur(8px); 
+  z-index: -1; /* Position behind the text */
+}
+
+
+
+h1 {
+    font-family:"Verdana",sans-serif;
+    color:#004d66; 
+    text-align: center; 
+}
+
